@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0b0b0f;
+  color: #eaeaea;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+  height: 70px;
+  background: #0f0f18;
+  border-bottom: 1px solid #1f1f2e;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+/* Ranking */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.ranking {
+  width: 100%;
+  max-width: 500px;
+  background: #111118;
+  border-radius: 14px;
+  padding: 25px;
+  animation: fadeUp 1.2s ease;
+}
+
+.ranking h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ranking ul {
+  list-style: none;
+}
+
+.ranking li {
+  display: flex;
+  justify-content: space-between;
+  background: #181825;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: slideIn .5s forwards;
+}
+
+.ranking li span {
+  color: #888;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+/* Animações */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Top 3 destaque */
+.ranking li.top {
+  background: linear-gradient(135deg, #1f1f33, #181825);
+  border: 1px solid rgba(255,255,255,.05);
+}
+
+.ranking li.top:nth-child(1) {
+  box-shadow: 0 0 20px rgba(255,215,0,.25);
+}
+
+.ranking li.top:nth-child(2) {
+  box-shadow: 0 0 20px rgba(192,192,192,.25);
+}
+
+.ranking li.top:nth-child(3) {
+  box-shadow: 0 0 20px rgba(205,127,50,.25);
+}
+
+.position {
+  font-size: 1.2rem;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.logo img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  color: #aaa;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
+.nav a.active {
+  color: #4da6ff;
+}
