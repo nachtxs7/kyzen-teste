@@ -107,7 +107,7 @@ footer {
 /* ===== TOP 1 ===== */
 .top1 {
   background-color: rgb(196, 160, 0);
-  border: 1px solid rgba(255, 215, 0, 0.5);
+  border: none;
 
   box-shadow:
     0 0 14px rgba(255, 215, 0, 0.35),
@@ -119,17 +119,18 @@ footer {
 /* ===== TOP 2 ===== */
 .top2 {
   background-color: rgb(92, 92, 92);
-  border: 1px solid rgba(192, 192, 192, 0.4);
-  box-shadow: 0 0 18px rgba(192, 192, 192, 0.25);
+  border: none;
 
+  box-shadow:
+    0 0 22px rgba(192, 192, 192, 0.25),
+    0 0 40px rgba(192, 192, 192, 0.15);
 }
 
 /* ===== TOP 3 ===== */
 .top3 {
   background-color: rgb(65, 39, 0);
-  border: 1px solid rgba(205, 127, 50, 0.4);
+  border: none;
   box-shadow: 0 0 18px rgba(205, 127, 50, 0.25);
-
 }
 
 .top {
