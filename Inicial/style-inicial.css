@@ -64,3 +64,15 @@ body {
 .page {
   padding: 60px 20px;
 }
+
+#music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #181825;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}

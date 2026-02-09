@@ -28,5 +28,29 @@
          Você adiciona o que quiser depois -->
   </main>
 
+  <audio id="bg-music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button id="music-btn">🔊 Música</button>
+
+<script>
+  const music = document.getElementById("bg-music");
+  const btn = document.getElementById("music-btn");
+
+  music.volume = 0.15; // volume baixo (recomendado)
+
+  btn.addEventListener("click", () => {
+    if (music.paused) {
+      music.play();
+      btn.textContent = "🔊 Tocando";
+    } else {
+      music.pause();
+      btn.textContent = "🔇 Pausado";
+    }
+  });
+</script>
+
+
 </body>
 </html>
