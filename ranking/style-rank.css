@@ -36,7 +36,6 @@ main {
   background: #111118;
   border-radius: 14px;
   padding: 25px;
-  animation: fadeUp 1.2s ease;
 }
 
 .ranking h2 {
@@ -51,13 +50,10 @@ main {
 
 .ranking li {
   display: flex;
-  justify-content: space-between;
-  background: #181825;
+  justify-content: space-between; 
   padding: 12px 16px;
   border-radius: 10px;
   margin-bottom: 10px;
-  opacity: 0;
-  animation: slideIn .5s forwards;
 }
 
 .ranking li span {
@@ -69,44 +65,6 @@ footer {
   text-align: center;
   padding: 20px;
   color: #666;
-}
-
-/* Animações */
-@keyframes fadeDown {
-  from { opacity: 0; transform: translateY(-30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideIn {
-  from { opacity: 0; transform: translateX(-20px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-/* Top 3 destaque */
-.ranking li.top {
-  background: linear-gradient(135deg, #1f1f33, #181825);
-  border: 1px solid rgba(255,255,255,.05);
-}
-
-.ranking li.top:nth-child(1) {
-  box-shadow: 0 0 20px rgba(255,215,0,.25);
-}
-
-.ranking li.top:nth-child(2) {
-  box-shadow: 0 0 20px rgba(192,192,192,.25);
-}
-
-.ranking li.top:nth-child(3) {
-  box-shadow: 0 0 20px rgba(205,127,50,.25);
-}
-
-.position {
-  font-size: 1.2rem;
 }
 
 /* LOGO */
@@ -122,6 +80,7 @@ footer {
   width: 36px;
   height: 36px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 /* NAV */
@@ -143,4 +102,68 @@ footer {
 
 .nav a.active {
   color: #4da6ff;
+}
+
+/* ===== TOP 1 ===== */
+.top1 {
+  background-color: rgb(196, 160, 0);
+  border: 1px solid rgba(255, 215, 0, 0.5);
+
+  box-shadow:
+    0 0 14px rgba(255, 215, 0, 0.35),
+    0 0 30px rgba(255, 215, 0, 0.25);
+
+  animation: glowGold 2.0s ease-in-out infinite;
+}
+
+/* ===== TOP 2 ===== */
+.top2 {
+  background-color: rgb(92, 92, 92);
+  border: 1px solid rgba(192, 192, 192, 0.4);
+  box-shadow: 0 0 18px rgba(192, 192, 192, 0.25);
+
+}
+
+/* ===== TOP 3 ===== */
+.top3 {
+  background-color: rgb(65, 39, 0);
+  border: 1px solid rgba(205, 127, 50, 0.4);
+  box-shadow: 0 0 18px rgba(205, 127, 50, 0.25);
+
+}
+
+.top {
+  background: #181825;
+
+   animation: fadeInLeft 0.6s ease forwards;
+}
+
+/* ===== ANIMAÇÃO TOP 1 ===== */
+@keyframes glowGold {
+  0% {
+    box-shadow:
+      0 0 12px rgba(255, 215, 0, 0.3),
+      0 0 28px rgba(255, 215, 0, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 26px rgba(255, 215, 0, 0.6),
+      0 0 55px rgba(255, 215, 0, 0.4);
+  }
+  100% {
+    box-shadow:
+      0 0 12px rgba(255, 215, 0, 0.3),
+      0 0 28px rgba(255, 215, 0, 0.2);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
