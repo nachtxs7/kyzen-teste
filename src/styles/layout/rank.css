@@ -1,0 +1,101 @@
+/* Ranking */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.ranking {
+  width: 100%;
+  max-width: 500px;
+  background: #111118;
+  border-radius: 14px;
+  padding: 25px;
+}
+
+.ranking h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 6px 6px 16px;
+}
+
+.ranking ul {
+  list-style: none;
+}
+
+.ranking li {
+  display: flex;
+  justify-content: space-between; 
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.ranking li span {
+  color: #888;
+}
+
+/* ===== TOP 1 ===== */
+.top1 {
+  background-color: rgb(196, 160, 0);
+  border: none;
+
+  box-shadow:
+    0 0 14px rgba(255, 215, 0, 0.35),
+    0 0 30px rgba(255, 215, 0, 0.25);
+
+  animation: glowGold 2.0s ease-in-out infinite;
+}
+
+/* ===== TOP 2 ===== */
+.top2 {
+  background-color: rgb(92, 92, 92);
+  border: none;
+
+  box-shadow:
+    0 0 22px rgba(192, 192, 192, 0.25),
+    0 0 40px rgba(192, 192, 192, 0.15);
+}
+
+/* ===== TOP 3 ===== */
+.top3 {
+  background-color: rgb(65, 39, 0);
+  border: none;
+  box-shadow: 0 0 18px rgba(205, 127, 50, 0.25);
+}
+
+.top {
+  background: #181825;
+
+   animation: fadeInLeft 0.6s ease forwards;
+}
+
+/* ===== ANIMAÇÃO TOP 1 ===== */
+@keyframes glowGold {
+  0% {
+    box-shadow:
+      0 0 12px rgba(255, 215, 0, 0.3),
+      0 0 28px rgba(255, 215, 0, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 26px rgba(255, 215, 0, 0.6),
+      0 0 55px rgba(255, 215, 0, 0.4);
+  }
+  100% {
+    box-shadow:
+      0 0 12px rgba(255, 215, 0, 0.3),
+      0 0 28px rgba(255, 215, 0, 0.2);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
