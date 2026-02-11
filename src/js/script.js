@@ -1,5 +1,5 @@
- const music = document.getElementById("bg-music");
-  const btn = document.getElementById("music-btn");
+const music = document.getElementById("bg-music");
+const btn = document.getElementById("music-btn");
 
   music.volume = 0.15; // volume baixo (recomendado)
 

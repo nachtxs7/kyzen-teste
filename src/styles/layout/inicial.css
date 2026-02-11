@@ -1,25 +1,17 @@
-/* CONTEÚDO DA PÁGINA */
-.page {
-  padding: 60px 20px;
+#mainIndex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#music-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #181825;
-  color: #fff;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 10px;
-  cursor: pointer;
+.esquerda{
+  
+  margin-left: 10vh;
 }
 
-.page h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  text-shadow: white 0px 0px 6px;
-  opacity: 0;
-  transform: translateX(-40px) scale(0.95);
-  animation: welcomeAnim 1.3s ease-out forwards;
+
+
+.direita video{
+  width: 40vw;
+  border-radius: 20px;
 }

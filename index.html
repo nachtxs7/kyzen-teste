@@ -7,7 +7,6 @@
 
   <link rel="stylesheet" href="src/styles/style.css"/>
   <script src="src/js/script.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -24,14 +23,35 @@
     </nav>
   </header>
 
-  <main class="page">
-      
+
+  <!-- MAIN -->
+  <main id="mainIndex">
+    <section class="esquerda">
+      <h2>Bem-vindo a kyzen</h2>
+      <p>
+        Somos uma comunidade 100% brasileira focada no roblox, atualmente somos a tripulação top 1 do Vox Seas
+        <br>
+        no nosso discord temos um sistema de rank para evoluir suas habilidades 
+        <br>
+        temos premios em dinheiro, robux, nitro e coisas relacionadas ao Vox Seas.
+      </p>
+    </section>
+
+    <section class="direita">
+      <video
+        src="src/assets/video/kyzenVideo.mp4"
+        controls
+      ></video>
+    </section>
   </main>
 
-  <audio id="bg-music" loop>
-  <source src="/src/assets/audio/music.mp3" type="audio/mpeg">
-  </audio>
+  <div class="musica">
+      <audio id="bg-music" loop>
+        <source src="src/assets/audio/music.mp3" type="audio/mpeg">
+      </audio>
 
-  <button id="music-btn">🔊 Música</button>
+      <button id="music-btn">🔊 Música</button>
+  </div>
+
 </body>
 </html>
