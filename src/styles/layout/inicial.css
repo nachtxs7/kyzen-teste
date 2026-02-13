@@ -1,17 +1,50 @@
-#mainIndex{
+#mainIndex {
+  min-height: 90vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5rem;
+  padding: 0 8%;
 }
 
-.esquerda{
-  
-  margin-left: 10vh;
+.esquerda {
+  max-width: 31rem;
 }
 
+.esquerda h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
 
+.esquerda h2 span {
+  color: #4da6ff;
+}
 
-.direita video{
-  width: 40vw;
-  border-radius: 20px;
+.esquerda p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.esquerda ul {
+  margin: 1rem 0 2rem 0;
+  padding-left: 1rem;
+}
+
+.esquerda ul li {
+  margin-bottom: 0.5rem;
+  list-style: square;
+  text-decoration: underline;
+}
+
+.direita {
+  background: linear-gradient(145deg, #0a0f1f, #0d1326);
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 40px rgba(77, 166, 255, 0.2);
+}
+
+.direita video {
+  width: 85vh;
+  border-radius: 15px;
 }
